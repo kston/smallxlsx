@@ -1,0 +1,31 @@
+.card {
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	border: 1px solid yellow;
+	margin-left: 1px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+}
+
+h3 {
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+h4 {
+	font-size: 14px;
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	color: black;
+}

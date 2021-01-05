@@ -6,10 +6,6 @@ function App() {
 		<div>
 			<Header />
 			<Homepade />
-			{/* Main */}
-			{/* Main-header */}
-			{/* Cards */}
-			{/* Card */}
 			{/* Footer */}
 		</div>
 	);
