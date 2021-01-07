@@ -4,6 +4,7 @@ import Ok from '../../assets/ok.svg';
 import Padlock from '../../assets/padlock.svg';
 import Knife from '../../assets/knife.svg';
 import Cloud from '../../assets/cloud.svg';
+
 const WORKPAGE_DATA = {
 	items: [
 		{
