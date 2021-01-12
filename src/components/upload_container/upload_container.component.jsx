@@ -1,21 +1,27 @@
 import React from 'react';
-import MergeFiles from '../../assets/compartilhamento-de-arquivos.svg';
 import Excel from '../../assets/excel.svg';
 
 import './upload_container.style.scss';
 
-function UploadContainerComponent() {
+const UploadContainerComponent = (item) => {
+	console.log(item);
+	const { title, description, icon, backgroundColor } = item.item;
 	return (
 		<div className='uploadContainer'>
 			<div className='processName'>
 				<div className='uploadContainerTitle'>
-					<img alt='merge' src={MergeFiles}></img>
-					<h2>Unir Arquivos</h2>
+					<img alt='merge' src={icon}></img>
+					<h2>{title}</h2>
 				</div>
 
-				<h3>Junte arquivos xlsx em apenas um arquivo.</h3>
+				<h3>{description}</h3>
 			</div>
-			<div className='uploadField'>
+			<div
+				className='uploadField'
+				style={{
+					background: backgroundColor,
+				}}
+			>
 				<div className='uploadFiledDashed'>
 					<img alt='merge' src={Excel}></img>
 					<button
@@ -34,6 +40,6 @@ function UploadContainerComponent() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default UploadContainerComponent;
