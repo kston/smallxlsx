@@ -1,12 +1,12 @@
 import React from 'react';
 import './workpage_description.style.scss';
 
-function WorkpageDesription(item) {
-	const { title, description, icon } = item.item;
+const WorkpageDesription = ({ item }) => {
+	const { title, description, icon } = item;
 
 	return (
 		<div className='topic'>
-			<div className='icon'>
+			<div className='topic-icon'>
 				<img alt='light' src={icon}></img>
 			</div>
 
@@ -14,6 +14,6 @@ function WorkpageDesription(item) {
 			<h5>{description}</h5>
 		</div>
 	);
-}
+};
 
 export default WorkpageDesription;

@@ -3,9 +3,8 @@ import Excel from '../../assets/excel.svg';
 
 import './upload_container.style.scss';
 
-const UploadContainerComponent = (item) => {
-	console.log(item);
-	const { title, description, icon, backgroundColor } = item.item;
+const UploadContainerComponent = ({ item }) => {
+	const { title, description, icon, backgroundColor } = item;
 	return (
 		<div className='uploadContainer'>
 			<div className='processName'>

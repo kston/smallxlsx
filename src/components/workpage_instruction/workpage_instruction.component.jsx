@@ -2,7 +2,7 @@ import React from 'react';
 import './workpage_instruction.style.scss';
 import Excel from '../../assets/excel.svg';
 
-function WorkpageInstruction() {
+const WorkpageInstruction = () => {
 	return (
 		<div className='workpageInstruction'>
 			<div className='instruction-icon'>
@@ -34,6 +34,6 @@ function WorkpageInstruction() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default WorkpageInstruction;

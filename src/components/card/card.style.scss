@@ -1,56 +1,29 @@
 .card {
-	display: inline-block;
-	width: 30%;
-	max-width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	height: 200px;
-	border: 1px solid yellow;
-	margin-left: 1px;
-	padding: 10px;
+	width: 90%;
 	text-decoration: none;
+	margin: 10px;
 }
 
-.icon {
+.card-icon {
 	width: 40px;
 	height: 40px;
 }
 
 .card h3 {
 	font-size: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	color: black;
 }
 h4 {
 	font-size: 14px;
 	font-weight: normal;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10px;
+
 	color: black;
 }
 
 @media (max-width: 950px) {
-	.icon {
-		width: 30px;
-		height: 30px;
-	}
-	h3 {
-		font-size: 18px;
-	}
-
-	h4 {
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 950px) {
-	h3 {
-		font-size: 16px;
-	}
-
-	h4 {
-		font-size: 10px;
-	}
 }

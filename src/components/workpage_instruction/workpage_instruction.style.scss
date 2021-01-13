@@ -1,27 +1,58 @@
 .workpageInstruction {
 	width: 100%;
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
 }
 .instruction-icon {
-	width: 150px;
-	height: 150px;
 	display: flex;
-	margin: 60px 20% 60px 10%;
+	align-items: center;
+	justify-content: center;
+
+	margin-right: 5%;
+	width: 100%;
 }
 
-h2 {
+.instruction-icon img {
+	width: 200px;
+}
+
+.instruction-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.instruction-text h2 {
+	display: inline-block;
 	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 19px;
 }
 li {
 	margin-bottom: 10px;
+	font-size: 17px;
 }
 
 ol li {
 	font-weight: bold;
+	margin-left: 7%;
 }
 
 li span {
 	font-weight: normal;
-	margin-left: 5px;
+	margin-left: 5%;
+}
+
+@media (max-width: 950px) {
+	.workpageInstruction {
+		display: grid;
+		grid-template-columns: 6fr;
+	}
+
+	.instruction-text h2 {
+		font-size: 15px;
+	}
+	li {
+		font-size: 15px;
+	}
 }

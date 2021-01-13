@@ -9,7 +9,10 @@ const Cards = (props) => {
 		<div className='card_container'>
 			<div className='cards'>
 				{Object.keys(cardsData).map((key) => (
-					<Card key={cardsData[key].id} item={[cardsData[key], props]} />
+					<Card
+						key={cardsData[key].id}
+						item={Object.assign(cardsData[key], props)}
+					/>
 				))}
 			</div>
 		</div>

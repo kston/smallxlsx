@@ -1,30 +1,29 @@
 .topic {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 
 	height: 200px;
-
 	margin-left: 5px;
 }
 
-.icon {
+.topic-icon {
 	width: 50px;
 	height: 50px;
-	margin-left: 40%;
+
 	margin-top: 10%;
 }
 
 .topic h4 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+
 	margin-bottom: 10px;
 	font-size: 15px;
 }
 
 .topic h5 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
 	font-size: 15px;
 	margin: 10px;
 	font-weight: normal;
@@ -32,16 +31,6 @@
 }
 @media (max-width: 950px) {
 	.topic {
-		height: 100px;
-	}
-
-	.topic h4 {
-		font-size: 12px;
-		margin-bottom: 5px;
-	}
-
-	.topic h5 {
-		font-size: 10px;
-		margin-bottom: 3px;
+		height: 150px;
 	}
 }

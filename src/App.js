@@ -3,7 +3,7 @@ import Homepade from './pages/Homepage/homepage.component.jsx';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import Workpages from './pages/workpages/workpages.components.jsx';
 
-function App({ match }) {
+const App = ({ match }) => {
 	console.log(match.path);
 	return (
 		<div>
@@ -16,6 +16,6 @@ function App({ match }) {
 			{/* Footer */}
 		</div>
 	);
-}
+};
 
 export default withRouter(App);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import WorkpageDesription from '../../components/worpage_description/workpage_description.component';
 import cardsData from '../../components/cards/cards.data';
 import workdata from './workpage_data';
@@ -14,16 +13,14 @@ const Workpages = ({ match }) => {
 			<div className='navpath'></div>
 
 			<div className='upload_container'>
-				{Object.keys(cardsData).map((key) => {
-					if (key.toLocaleLowerCase() === match.params.id) {
-						return (
-							<UploadContainerComponent
-								key={cardsData[key].id}
-								item={cardsData[key]}
-							/>
-						);
-					}
-				})}
+				{Object.keys(cardsData)
+					.filter((key) => key.toLocaleLowerCase() === match.params.id)
+					.map((key) => (
+						<UploadContainerComponent
+							key={cardsData[key].id}
+							item={cardsData[key]}
+						/>
+					))}
 			</div>
 			<div className='page_description'>
 				{workdata.items.map((item) => (
@@ -37,4 +34,4 @@ const Workpages = ({ match }) => {
 	);
 };
 
-export default withRouter(Workpages);
+export default Workpages;

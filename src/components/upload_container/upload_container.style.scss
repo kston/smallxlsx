@@ -25,7 +25,6 @@
 }
 
 .processName h3 {
-	display: flex;
 	font-size: 16px;
 	font-weight: normal;
 	color: rgb(33, 33, 33);
@@ -45,20 +44,22 @@
 
 .uploadFiledDashed {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	inset: 12px;
 	background: rgba(0, 0, 0, 0.1);
 	border: 2px dashed rgba(0, 0, 0, 0.15);
 }
 
 .uploadFiledDashed img {
-	margin: 30px 47%;
 	height: 40px;
 	width: 40px;
+	margin: 10px;
 }
 
 .fileInsertButton {
-	margin: 0 36%;
-	padding: 2px;
 	width: 300px;
 	border-radius: 4px;
 	color: rgb(33, 33, 33);
@@ -80,10 +81,13 @@
 }
 
 .dragTitle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 15px;
 	color: white;
 	margin-top: 20px;
+}
+
+@media (max-width: 950px) {
+	.fileInsertButton {
+		width: 200px;
+	}
 }

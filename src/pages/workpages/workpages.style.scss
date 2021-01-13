@@ -1,14 +1,12 @@
 .page_description {
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr;
-	height: 440px;
 	width: 90%;
 	margin-left: 5%;
+	margin-bottom: 10%;
 }
 
 .page_instruction {
-	height: 300px;
-	margin-top: 10px;
 	border-bottom: 1px solid rgb(224, 224, 224);
 	border-top: 1px solid rgb(224, 224, 224);
 }
@@ -20,7 +18,14 @@
 
 @media (max-width: 950px) {
 	.page_description {
-		grid-template-columns: 2fr 2fr;
-		height: 550px;
+		grid-template-columns: 3fr 3fr;
+		margin-bottom: 20%;
+	}
+}
+
+@media (max-width: 800px) {
+	.page_description {
+		grid-template-columns: 6fr;
+		margin-bottom: 20%;
 	}
 }
